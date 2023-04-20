@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Online Card Game</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <!-- Note: The "styleN" class below should match that of the banner element. -->
+        <header id="header" class="alt style2">
+            <a href="index.html" class="logo"><strong>Back To Home</strong></a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <!-- Banner -->
+        <!-- Note: The "styleN" class below should match that of the header element. -->
+        <section id="banner" class="style2">
+            <div class="inner">
+                <span class="image">
+								<img src="images/MirGame 6_1_2020 4_30_43 PM.png" alt="" />
+							</span>
+                <header class="major">
+                    <h1>Online Card Game</h1>
+                </header>
+                <div class="content">
+                    <p>This is a simple card game that I made to demonstrate use of Unity's multiplayer tools. Specifically this project uses Game Sever Hosting, Lobby, Matchmaker, and Netcode for Game Objects.</div>
+            </div>
+        </section>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- One -->
+            <section id="one">
+                <div class="inner">
+                    <header class="major">
+                        <h2>The Basics</h2>
+                    </header>
+                    <p>At its most basic, this game is just a simple turn-based card game where cards deal damage. Players can draw a card, use a card, and discard a card before ending their turn. Or they can skip their turn at any moment. At the moment the more interesting part of the game is how the networking is done and the tools used.</p>
+                </div>
+            </section>
+
+            <!-- Two -->
+            <section id="two" class="spotlights">
+                <section>
+                    <a href="#" class="image">
+                        <img src="images/code.jpg" alt="" data-position="center center" />
+                    </a>
+                    <div class="content">
+                        <div class="inner">
+                            <header class="major">
+                                <h3>The Code</h3>
+                            </header>
+                            <p>The game is built using the Unity game engine. All of the scripts are written in C# using Visual Studio (community). Being a one-man development team, I am responsible for all the game design, programming, art, and everything
+                                else. The bulk of the work so far has been on making the game a globally (probably best to play from north america) accessible multiplayer game using Unity's modern tools. I plan on sprucing the game up, but for now my focus has been on showcasing that I can work with client-server architectures and Unity's multiplayer tools. </p>
+                            <h3>Checkout The Github</h3>
+                            <ul class="content">
+                                <li><a href="https://github.com/thoroughlyswooped/CardGame_Demo" class="button">Github</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <a href="#" class="image">
+                        <img src="images/EarthFromSpace.jpg" alt="" data-position="center center" />
+                    </a>
+                    <div class="content">
+                        <div class="inner">
+                            <header class="major">
+                                <h3>The Networking</h3>
+                            </header>
+                            <p> The in-game networking if you will (or the networking that actually updates player states and makes the game a game) is handled by Unity's Netcode for Gameobjects. This allows for RPCs as well as common data that one might want when networking and some automated syncing/state checking. I chose to use Netcode for Gameobjects over a third part solution, becuase Unity somewhat recently added a lot of tools and libraries for multi-player development in Unity. For this project I also decided to use Unity's Server Hosting, Lobby, and Matchmaking tools. All of these are part of the Unity Gaming Services offered by Unity. I created a dedicated linux server build for hosting my game and set up a fleet of servers using Unity's Game Server Hosting. I then used Lobby to group the players together and Matchmaker to handle matchmaking. The game is server-authoritative and follows a client-server architecture with clients passing inputs to the server to update the game state and propigate changes. There is still a lot that can be done with the multiplayer functionality, and I plan to make some updates in the future to clean up the lobby and matchmaking interfaces.</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section>
+                    <a href="#" class="image">
+                        <img src="" alt="" data-position="top center" />
+                    </a>
+                    <div class="content">
+                        <div class="inner">
+                            <header class="major">
+                                <h3>Plans For the Future</h3>
+                            </header>
+                            <p>I am currently working on this project, so check this website and the github page for updates if you want to. I am planning on improving the gameplay by adding some shuffling mechanics to the game, as well as more cards, better art, making player decks editable and persistent, and cleaning up the lobby/matchmaking interfaces. This may not be the order that those features get added to the game, but I plan on making significant changes in the comming couple of weeks.</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <a href="#" class="image">
+                        <img src="images/CardGameDemo_EarlyScreenshot.png" alt="" data-position="25% 25%" />
+                    </a>
+                    <div class="content">
+                        <div class="inner">
+                            <header class="major">
+                                <h3>Play It Now</h3>
+                            </header>
+                            <p>Click the link below to download the latest version of the game. This is a windows build. The game doesn't currently have a single player portion to it, and there isn't really a player base. This means that there probably won't be anyone else you can match up with in a game; however, if you want to test the game, you can run multiple instances on your machine, or you can  get someone else to download it and find a match together. Also just a quick note, if you find that the "Find A Match" button keeps timing out, try a few times as the servers are not persistent (that would cost a fee while having them as needed does not). If you have any questions or just want someone to queue up a game with, my contact is listed at the bottom of every page.</p>
+                            <ul class="actions">
+                                <ul class="content">
+                                    <li><a href="https://github.com/thoroughlyswooped/CardGame_Demo/releases" class="button" >Get Build</a></li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            
+        </div>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="inner">
+                <section class="split">
+                    <section>
+                        <div class="contact-method">
+                            <span class="icon solid alt fa-envelope"></span>
+                            <h3>Email</h3>
+                            <a href="#">ezrathuffman@gmail.com</a>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="contact-method">
+                            <span class="icon solid alt fa-phone"></span>
+                            <h3>Phone</h3>
+                            <span>(805) 822-3602</span>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="https://github.com/thoroughlyswooped" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/ezra-huffman-171082158" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Untitled</li>
+                    <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
