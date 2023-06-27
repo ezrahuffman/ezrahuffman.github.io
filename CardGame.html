@@ -105,27 +105,34 @@
                             <header class="major">
                                 <h3>The Networking</h3>
                             </header>
-                            <p> The in-game networking if you will (or the networking that actually updates player states and makes the game a game) is handled by Unity's Netcode for Gameobjects. This allows for RPCs as well as common data that one might want when networking and some automated syncing/state checking. I chose to use Netcode for Gameobjects over a third part solution, becuase Unity somewhat recently added a lot of tools and libraries for multi-player development in Unity. For this project I also decided to use Unity's Server Hosting, Lobby, and Matchmaking tools. All of these are part of the Unity Gaming Services offered by Unity. I created a dedicated linux server build for hosting my game and set up a fleet of servers using Unity's Game Server Hosting. I then used Lobby to group the players together and Matchmaker to handle matchmaking. The game is server-authoritative and follows a client-server architecture with clients passing inputs to the server to update the game state and propigate changes. There is still a lot that can be done with the multiplayer functionality, and I plan to make some updates in the future to clean up the lobby and matchmaking interfaces.</p>
+                            <p> The in-game networking if you will (or the networking that actually updates player states and makes the game a game) is handled by Unity's Netcode for Gameobjects. This allows for RPCs as well as common data that one might want when networking and some automated syncing/state checking. I chose to use Netcode for Gameobjects over a third part solution, becuase Unity somewhat recently added a lot of tools and libraries for multi-player development in Unity. For this project I also decided to use Unity's Server Hosting, Lobby, and Matchmaking tools. All of these are part of the Unity Gaming Services offered by Unity. I created a dedicated linux server build for hosting my game and set up a fleet of servers using Unity's Game Server Hosting. I then used Lobby to group the players together and Matchmaker to handle matchmaking. The game is server-authoritative and follows a client-server architecture with clients passing inputs to the server to update the game state and propagate changes. There is still a lot that can be done with the multiplayer functionality, and I plan to make some updates in the future to clean up the lobby and matchmaking interfaces.</p>
                         </div>
                     </div>
                 </section>
                 
                 <section>
-                    <a href="#" class="image">
-                        <img src="" alt="" data-position="top center" />
+                    <a href="images/CardGameDemo_FuturePlans.png" class="image" data-position="center center">
+                        <img src="images/CardGameDemo_FuturePlans.png" alt="" data-position="25% 25%" />
                     </a>
                     <div class="content">
                         <div class="inner">
                             <header class="major">
                                 <h3>Plans For the Future</h3>
                             </header>
-                            <p>I am currently working on this project, so check this website and the github page for updates if you want to. I am planning on improving the gameplay by adding some shuffling mechanics to the game, as well as more cards, better art, making player decks editable and persistent, and cleaning up the lobby/matchmaking interfaces. This may not be the order that those features get added to the game, but I plan on making significant changes in the comming couple of weeks.</p>
+                            <p>I am currently working on this project, so check this website and the github page for updates if you want to. I update the <a href="https://github.com/thoroughlyswooped/CardGame_Demo">github</a> with changes first, so check there for more updated plans.</p>
+                            <ul class="content">
+                                <li>Full game loop, so players can return to match making</li>
+                                <li>UI clean up (some updates are late and some text is hard/impossible to read on cards). There are also background assets with missing textures.</li>
+                                <li>More cards in deck</li>
+                                <li>Unlock cards with wins</li>
+                                <li>Bug Smash (some bugs with UI and Matchmaking)</li>
+                            </ul>
                         </div>
                     </div>
                 </section>
                 <section>
-                    <a href="#" class="image">
-                        <img src="images/CardGameDemo_EarlyScreenshot.png" alt="" data-position="25% 25%" />
+                    <a href="https://github.com/thoroughlyswooped/CardGame_Demo" class="image">
+                        <img src="images/Card_Demo_Screenshot.png" alt="" data-position="25% 25%" />
                     </a>
                     <div class="content">
                         <div class="inner">
