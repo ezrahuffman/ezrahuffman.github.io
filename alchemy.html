@@ -57,8 +57,8 @@
                 <header class="major">
                     <h1>Alchemy Assassin</h1>
                 </header>
+                <p>This is the game I currently working on, read below for more information.</p>
                 <div class="content">
-                    <p>This is a casual exploration game I started as part of the Pirate Software Game Jam. I am continuing to add to the game with plans of a full release sometime in 2024. This page is a work in progress.</p>
             </div>
         </section>
 
@@ -71,7 +71,7 @@
                     <header class="major">
                         <h2>The Basics</h2>
                     </header>
-                    <p>At its most basic, this game is just a simple turn-based card game where cards deal damage. Players can draw a card, use a card, and discard a card before ending their turn. Or they can skip their turn at any moment. At the moment the more interesting part of the game is how the networking is done and the tools used.</p>
+                    <p>This is a casual exploration game I started as part of the Pirate Software Game Jam (Summer 2024). I am continuing to add to the game with plans of a full release sometime in mid 2025. This page is a work in progress.</p>
                 </div>
             </section>
 
@@ -79,53 +79,54 @@
             <section id="two" class="spotlights">
                 <section>
                     <a href="#" class="image">
-                        <img src="images/code.jpg" alt="" data-position="center center" />
+                        <img src="images/AAMainMenu.png" alt="" data-position="center center" />
                     </a>
                     <div class="content">
                         <div class="inner">
                             <header class="major">
-                                <h3>The Code</h3>
+                                <h3>Itch.io Page</h3>
                             </header>
-                            <p>The game is built using the Unity game engine. All of the scripts are written in C# using Visual Studio (community). Being a one-man development team, I am responsible for all the game design, programming, art, and everything
-                                else. The bulk of the work so far has been on making the game a globally (probably best to play from north america) accessible multiplayer game using Unity's modern tools. I plan on sprucing the game up, but for now my focus has been on showcasing that I can work with client-server architectures and Unity's multiplayer tools. </p>
-                            <h3>Checkout The Github</h3>
+                            <p>This is the games page on Itch.io where you can play the game now.</p>
+                            <h3>Checkout The Page</h3>
                             <ul class="content">
-                                <li><a href="https://github.com/ezrahuffman/CardGame_Demo" class="button">Github</a></li>
+                                <li><a href="https://leftovergames.itch.io/alchemy-assassin" class="button">Itch.io</a></li>
                             </ul>
                         </div>
                     </div>
                 </section>
                 <section>
-                    <a href="#" class="image">
-                        <img src="images/EarthFromSpace.jpg" alt="" data-position="center center" />
+                    <a href="https://docs.google.com/document/d/1FE2BCGInvOP7k9XuENpD4P8L7gRNu4CVH-gAOfXNLuo/edit?usp=sharing" class="image">
+                        <img src="images/GoogleDocsLogo.png" alt="" data-position="center center" />
                     </a>
                     <div class="content">
                         <div class="inner">
                             <header class="major">
-                                <h3>The Networking</h3>
+                                <h3>Future Plans</h3>
                             </header>
-                            <p> The in-game networking if you will (or the networking that actually updates player states and makes the game a game) is handled by Unity's Netcode for Gameobjects. This allows for RPCs as well as common data that one might want when networking and some automated syncing/state checking. I chose to use Netcode for Gameobjects over a third part solution, becuase Unity somewhat recently added a lot of tools and libraries for multi-player development in Unity. For this project I also decided to use Unity's Server Hosting, Lobby, and Matchmaking tools. All of these are part of the Unity Gaming Services offered by Unity. I created a dedicated linux server build for hosting my game and set up a fleet of servers using Unity's Game Server Hosting. I then used Lobby to group the players together and Matchmaker to handle matchmaking. The game is server-authoritative and follows a client-server architecture with clients passing inputs to the server to update the game state and propagate changes. There is still a lot that can be done with the multiplayer functionality, and I plan to make some updates in the future to clean up the lobby and matchmaking interfaces.</p>
+                            <p>Part of the Pirate Software Game Jam was submitting a GDD with the game. I will continue to update this document as the game design progesses, but it might be a little out of date at times.</p>
                         </div>
                     </div>
                 </section>
+                <!--
                 <section>
-                    <a href="https://github.com/ezrahuffman/CardGame_Demo" class="image">
-                        <img src="images/CardGameDemo_v2_Game.png" alt="" data-position="25% 25%" />
+                    <a href="#" class="image">
+                        <img src="" alt="" data-position="25% 25%" />
                     </a>
                     <div class="content">
                         <div class="inner">
                             <header class="major">
-                                <h3>Play It Now</h3>
+                                <h3>YouTube</h3>
                             </header>
-                            <p>Click the link below to download the latest version of the game. This is a windows build. The game doesn't currently have a single player portion to it, and there isn't really a player base. This means that there probably won't be anyone else you can match up with in a game; however, if you want to test the game, you can run multiple instances on your machine, or you can  get someone else to download it and find a match together. Also just a quick note, if you find that the "Find A Match" button keeps timing out, try a few times as the servers are not persistent (that would cost a fee while having them as needed does not). If you have any questions or just want someone to queue up a game with, my contact is listed at the bottom of every page.</p>
+                            <p>I post semi-weekly devlog videos on YouTube with updates on the games development.</p>
                             <ul class="actions">
                                 <ul class="content">
-                                    <li><a href="https://github.com/ezrahuffman/CardGame_Demo/releases" class="button" >Get Build</a></li>
+                                    <li><a href="#" class="button" >View Playlist</a></li>
                                 </ul>
                             </ul>
                         </div>
                     </div>
                 </section>
+                -->
             </section>
             
         </div>
