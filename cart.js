@@ -51,8 +51,8 @@ document.body.appendChild(renderer.domElement);
 const scene = new THREE.Scene();
 scene.background = new THREE.Color( 0xbfe3dd );
 
-const worldWidth = visibleWidthAtZDepth(0, camera);
-const worldHeight = visibleHeightAtZDepth(0, camera);
+let worldWidth = visibleWidthAtZDepth(0, camera);
+let worldHeight = visibleHeightAtZDepth(0, camera);
 
 const mass1_slider = document.getElementById('mass1');
 const mass2_slider = document.getElementById('mass2');
