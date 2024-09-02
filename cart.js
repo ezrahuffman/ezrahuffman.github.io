@@ -1,6 +1,4 @@
-import * as THREE from 'three';
-import WebGL from 'three/addons/capabilities/WebGL.js';
-import { threshold } from 'three/webgpu';
+import * as THREE from './dist/bundle.js';
 
 
 

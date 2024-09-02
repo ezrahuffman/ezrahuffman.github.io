@@ -1,0 +1,27 @@
+{
+    "name": "portfolio-website",
+    "version": "1.0.0",
+    "description": "A Three.js project using Webpack",
+    "main": "src/index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "webpack",
+      "start": "webpack serve --open",
+      "watch": "webpack --watch"
+    },
+    "keywords": [
+      "three.js",
+      "webpack",
+      "3D"
+    ],
+    "author": "Ezra Huffman",
+    "license": "ISC",
+    "dependencies": {
+      "three": "^0.168.0"
+    },
+    "devDependencies": {
+      "webpack": "^5.65.0",
+      "webpack-cli": "^4.9.1",
+      "webpack-dev-server": "^4.7.2"
+    }
+  }
