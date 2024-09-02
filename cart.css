@@ -1,0 +1,59 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #1a1a1a;
+	color: #e0e0e0;
+	overflow: hidden;
+}
+#controls {
+	position: absolute;
+	bottom: 200px;
+	left: 100px;
+	background: rgba(40, 40, 40, 0.9);
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+input[type="range"] {
+	width: 100%;
+	margin-bottom: 15px;
+	-webkit-appearance: none;
+	background: #4a4a4a;
+	outline: none;
+	border-radius: 15px;
+	height: 6px;
+}
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 18px;
+	height: 18px;
+	background: #000000;
+	cursor: pointer;
+	border-radius: 50%;
+}
+input[type="range"]::-moz-range-thumb {
+	width: 18px;
+	height: 18px;
+	background: #403535;
+	cursor: pointer;
+	border-radius: 50%;
+	border: none;
+}
+#info {
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+	display: block;
+	color: #000000;  /* Changed to light grey to match theme */
+	background-color: rgba(40, 40, 40, 0.0);  /* Added semi-transparent background */
+	padding: 10px 0;  /* Added some padding */
+	font-size: 25px;  /* Specified font size */
+}
